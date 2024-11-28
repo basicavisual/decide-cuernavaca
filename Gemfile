@@ -17,6 +17,8 @@ gem "puma", ">= 6.3.1"
 
 gem "wicked_pdf", "~> 2.1"
 
+gem "omniauth_openid_connect"
+
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
 

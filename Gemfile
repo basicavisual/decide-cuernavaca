@@ -15,6 +15,7 @@ gem "bootsnap", "~> 1.3"
 gem "puma", ">= 6.3.1"
 
 gem "wicked_pdf", "~> 2.1"
+gem "aws-sdk-s3", require: false
 
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
@@ -33,4 +34,9 @@ group :development do
 end
 
 group :production do
+  gem "passenger"
+  gem 'delayed_job_active_record'
+  gem "daemons"
 end
+
+
